@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="shortcut icon" href="./favicon.ico">
+  <link rel="shortcut icon" href="./logo.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
@@ -46,30 +46,24 @@
             <h1 class="title is-1 publication-title">CaT: Coaching a Teachable Student</h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://jimuyangz.github.io/">Jimuyang Zhang</a>&emsp;
-                <a href="https://tzmhuang.github.io/">Zanming Huang</a>&emsp;
+                <a href="https://jimuyangz.github.io/">Hee Jae Kim</a>&emsp;
+                <a href="https://zekai-yin.github.io/">Zekai Yin</a>&emsp;
+                <a href="https://leilai125.github.io/">Lei Lai</a>&emsp;
+                <a href="https://branchoutcorl.github.io/">Jason Lee</a>&emsp;
                 <a href="https://eshed1.github.io/">Eshed Ohn-Bar</a>&emsp;
                 <br />Boston University
-                <span class="brmod"></span>CVPR 2023 (Highlight)</span>
+                <span class="brmod"></span>CoRL 2025</span>
             </div>
 
             <div class="column has-text-centered">
               <div class="publication-links">
                 <!-- PDF Link. -->
                 <span class="link-block">
-                  <a href="./resources/CaT.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://openreview.net/pdf/8a87e7f37431a21394eac9a184d3461226abe4c7.pdf" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fas fa-file-pdf"></i>
                     </span>
                     <span>Paper</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="http://arxiv.org/abs/2306.10014" class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>arXiv</span>
                   </a>
                 </span>
                 <!-- Video Link. -->
@@ -83,23 +77,13 @@
                 </span>
                 <!-- Code Link. -->
                 <span class="link-block">
-                  <a href="https://github.com/h2xlab/CaT" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://branchoutcorl.github.io/" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
                 </span>
-                <!-- Slides Link. -->
-                <!-- <span class="link-block">
-                <a href="TODO"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-powerpoint"></i>
-                  </span>
-                  <span>Slides</span>
-                  </a>
-              </span> -->
               </div>
 
             </div>
@@ -108,19 +92,6 @@
       </div>
     </div>
   </section>
-
-  <!-- <section class="hero teaser">
-  <div class="hero-body">
-    <div class="columns is-centered">
-      <div class="column is-6">
-        <img src="./resources/example1.gif" />
-        <h2 class="subtitle has-text-centered">
-        </h2>
-      </div>
-    </div>
-  </div>
-</section>
- -->
 
 
   <section class="section">
@@ -132,31 +103,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              We propose a novel knowledge distillation framework for
-              effectively teaching a sensorimotor student agent to drive
-              from the supervision of a privileged teacher agent. Current
-              distillation for sensorimotor agents methods tend to result
-              in suboptimal learned driving behavior by the student,
-              which we hypothesize is due to inherent differences between
-              the input, modeling capacity, and optimization processes of
-              the two agents. We develop a novel distillation scheme that
-              can address these limitations and close the gap between the
-              sensorimotor agent and its privileged teacher. Our key insight
-              is to design a student which learns to align their input
-              features with the teacher’s privileged Bird’s Eye View (BEV)
-              space. The student then can benefit from direct supervision
-              by the teacher over the internal representation learning. To
-              scaffold the difficult sensorimotor learning task, the student
-              model is optimized via a student-paced coaching mechanism with 
-              various auxiliary supervision. We further propose
-              a high-capacity imitation learned privileged agent that surpasses
-              prior privileged agents in CARLA and ensures the
-              student learns safe driving behavior. Our proposed sensorimotor
-              agent results in a robust image-based behavior
-              cloning agent in CARLA, improving over current models
-              by over 20.6% in driving score without requiring LiDAR,
-              historical observations, ensemble of models, on-policy data
-              aggregation or reinforcement learning.
+            Modeling the nuanced, multimodal nature of human driving remains a core challenge for autonomous systems, as existing methods often fail to capture the diversity of plausible behaviors in complex real-world scenarios. In this work, we introduce a novel end-to-end planner and benchmark for modeling realistic multimodality in autonomous driving decisions. We propose a Gaussian Mixture Model (GMM)-based diffusion model designed to explicitly capture human-like, multimodal driving decisions in diverse contexts. Our model achieves state-of-the-art performance on current benchmarks, but reveals weaknesses in standard evaluation practices which rely on single ground-truth trajectories or coarse closed-loop metrics while also penalizing diverse yet plausible alternatives. To address this limitation, we further develop a human-in-the-loop simulation benchmark that enables finer-grained evaluations and measures multimodal realism in challenging driving settings. Our code, models, and benchmark data will be released to promote more accurate and human-aligned autonomous driving models.
             </p>
           </div>
         </div>
@@ -169,15 +116,12 @@
       <div class="column is-half">
         <h2 class="title is-3">Video</h2>
         <div class="publication-video">
-          <!-- <video controls>
-            <source src="./resources/CaT_Video.mp4" type="video/mp4">
-          </video> -->
-          <iframe src="https://www.youtube.com/embed/5tmkDHfgqvU"
-                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <video controls>
+            <source src="./resources/highlight_video.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
-    <!--/ Paper video. -->
 
   </section>
 
@@ -189,19 +133,10 @@
           <h2 class="title is-3">Motivation</h2>
           <div class="content has-text-justified">
             <p>
-              To ease the challenging sensorimotor agent training task, recent approaches decompose the task into
-              stages, by first training a privileged network with complete knowledge of the world and distilling its
-              knowledge into a less capable student network. However, current distillation methods for sensorimotor
-              agents result in <b>suboptimal driving behavior</b> due to <b>inherent differences between the inputs,
-                modeling
-                capacity</b>, and <b>optimization processes of the two agents.</b> </p>
+            Real-world driving involves multiple plausible decisions, making planning inherently multimodal. Yet, current planners often fail to capture diverse mode, often remaining deterministic or collapsing to a dominant mode. Moreover, existing datasets provide only a single annotation per scenario, which may penalize valid alternatives.
             </p>
             <div class="column">
-              <img src="./resources/lbc_diagram.png" />
-            </div>
-
-            <div class="content has-text-centered">
-              <i>Chen, et al. CoRL 2020</i>
+              <img src="./resources/motivation.png" />
             </div>
 
           </div>
@@ -217,22 +152,8 @@
         <div class="column is-four-fifths">
           <h2 class="title is-3">Method</h2>
           <div class="content has-text-justified">
-            We develop a novel deep distillation scheme that can address these
-            limitations and close the gap between the sensorimotor agent and its
-            privileged teacher. We achieve this by
+            We develop a novel deep 
 
-            <ol>
-              <li><b>Effective Teacher</b>: We propose to incorporate explicit safety-aware cues
-                into the BEV space that facilitate a surprisingly effective teacher agent
-                design. We demonstrate our learned agent to match expert- level decisionmaking.</li>
-
-              <li><b>Teachable Student via Alignment</b>: An IPM-based transformer alignment
-                module can facilitate direct distillation of most of the teacher’s features and
-                better guide the student learning process.</li>
-
-              <li><b>Student-paced Coaching</b>: A coaching mechanism for managing difficult
-                samples can scaffold knowledge and lead to improved model optimization
-                by better considering the ability of the student.</li>
             </ol>
           </div>
         </div>
@@ -242,18 +163,12 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-4" align="left">Effective Teacher</h2>
+          <h2 class="title is-4" align="left">GMM-based Diffusion Planner</h2>
           <div class="content has-text-justified">
-            Given the low performance of prior privileged agents, the teacher could benefit from more <b>explicit
-            safety-driven cues in the BEV</b>. We propose to add two types of channels of predicted agents’ future and
-            entity attention. We first utilize a kinematics bicycle model to predict future trajectories of dynamic
-            objects, which enables us to iteratively predict and represent short-term future position, orientation, and
-            speed of agent. Then, we encode an explicit attention channel for highlighting potential future infractions.
-            Our boosted teacher agent even improves over the rule-based expert.
-
+          explain planner
           </div>
           <div class="column">
-            <img src="./resources/bev_figure.png" width="80%" />
+            <img src="./resources/arch.png" width="80%" />
           </div>
         </div>
       </div>
@@ -261,13 +176,9 @@
 
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-4" align="left">Teachable student via Alignment</h2>
+          <h2 class="title is-4" align="left">Human-in-the-Loop Simulation</h2>
           <div class="content has-text-justified">
-            Due to the difference between inputs and modeling capacities, it can be difficult to align the image-based
-            student features and output with the BEV-based privileged teacher. Therefore, we proposed an <b>IPM-based
-              transformer alignment module</b> that can facilitate direct distillation of most of the teacher’s features
-            and better
-            guide the student learning process.
+          explain simulation
           </div>
           <div class="column">
             <img src="./resources/figure1_crop.png" width="80%" />
@@ -275,79 +186,69 @@
         </div>
       </div>
 
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-4" align="left">Student-paced Coaching</h2>
-          <div class="content has-text-justified">
-            To better consider the learning ability of the student, we gradually coach the student with a student-paced
-            coaching mechanism. Specifically, we interpolate between teacher features and student features on samples
-            that the student performed poorly (i.e. higher loss). This effectively adjusts the learning rate in a
-            sample-selective manner, which aims to stabilize training by reducing the difficulty when the student is
-            unable to perform the optimal action.
-          </div>
-
-          <div class="column">
-            <img src="./resources/student_pace.png" width="50%" />
-          </div>
-
-        </div>
-      </div>
-
-
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-4" align="left">Model Architecture of CaT</h2>
-          <div class="content has-text-justified">
-            <p>
-              Our proposed CaT framework
-              enables highly effective knowledge transfer between a privileged
-              teacher and a sensorimotor (i.e., image-based) student.
-
-              Specifically, we first sample queries using a spatial parameterization of the BEV space and process them
-              with a self-attention module. Then, a deformable cross-attention module is applied to populate the
-              student’s BEV features.
-
-              The residual blocks following the alignment module can consequently facilitate knowledge transfer via
-              direct distillation of most of the teacher’s features.
-
-
-              Our optimization objective for guiding the distillation process is a weighted sum over both distillation
-              and auxiliary tasks, including output distillation loss, feature distillation loss, segmentation loss and
-              command prediction loss.
-            </p>
-            <div class="column">
-              <img src="./resources/method.png" />
-            </div>
-
-          </div>
-        </div>
-      </div>
-
 
     </div>
   </section>
 
+
+
   <section class="section">
     <div class="container">
+
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
           <h2 class="title is-3">Result</h2>
           <div class="content has-text-justified">
-            We present our closed-loop evaluation results on the Longest-6 Benchmark in CARLA. As illustrated in the
-            table below, CaT is able to achieve state of the art performance among all prior agents, including lidar
-            based
-            approaches. Moreover, we note that our privileged BEV agent learned by imitation with history and desired
-            path, agent forecast, and entity attention even outperforms the rule-based expert.
-          </div>
-          <div class="column">
-            <img src="./resources/results.png" width="80%" />
+            We present open-loop closed-loop multimodal evaluation protocol 
+            </ol>
           </div>
         </div>
       </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" align="left">Open-Loop Evaluation</h2>
+          <div class="content has-text-justified">
+          explain openloop
+          </div>
+          <div class="column">
+            <img src="./resources/result_openloop.png" width="80%" />
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" align="left">Closed-Loop Evaluation in HugSim</h2>
+          <div class="content has-text-justified">
+          explain closedloop
+          </div>
+          <div class="column">
+            <img src="./resources/result_closedloop.png" width="80%" />
+          </div>
+        </div>
+      </div>
+
+
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-4" align="left">Qualitative Examples</h2>
+          <div class="content has-text-justified">
+          explain 
+          </div>
+          <div class="column">
+            <img src="./resources/qaulitative_example.png" width="80%" />
+          </div>
+        </div>
+      </div>
+      
     </div>
   </section>
 
 
+
+<!-- 
   <section class="section">
     <div class="container">
       <div class="columns is-centered has-text-centered">
@@ -359,7 +260,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <section class="section id=" BibTeX"">
@@ -368,11 +269,11 @@
         <div class="column">
           <h2 class="title is-3">BibTeX</h2>
           <div class="content has-text-justified">
-            <pre><code>@inproceedings{zhang2023coaching,
-        title={Coaching a Teachable Student},
-        author={Zhang, Jimuyang and Huang, Zanming and Ohn-Bar, Eshed},
-        booktitle={CVPR},
-        year={2023}
+            <pre><code>@inproceedings{kim2025branchout,
+        title={BranchOut: Capturing Realistic Multimodality in Autonomous Driving Decisions},
+        author={Kim, Hee Jae and Yin, Zekai and Lai, Lei and Lee, Jason and Ohn-Bar, Eshed},
+        booktitle={CoRL},
+        year={2025}
 }</code></pre>
 
           </div>
@@ -387,9 +288,7 @@
         <div class="column">
           <h2 class="title is-3">Acknowledgments</h2>
           <div class="content has-text-centered">
-            We thank the Red Hat Collaboratory
-            for supporting this research.
-
+            We thank the Red Hat Collaboratory (award #2024-01-RH07, #2025-01-RH04) and the National Science Foundation (IIS-2152077) for supporting this research.
           </div>
         </div>
       </div>
