@@ -171,7 +171,7 @@
               Real-world driving involves multiple plausible and safe decisions in a given scenario. Yet, many current planners are deterministic or exhibit mode collapse, and most datasets provide only a single ground truth per scene, penalizing other feasible alternatives. BranchOut advances both modeling and evaluation of <em>realistic multimodality</em> in planning.
             </p>
             <ul>
-              <li><b>GMM-based Diffusion Planner.</b> An end-to-end, scene-conditioned diffusion model with a branched GMM head that outputs multiple trajectory hypotheses per high-level command (Left/Straight/Right), improving multimodal coverage and realism.</li>
+              <li><b>GMM-based Diffusion Planner.</b> An end-to-end, scene-conditioned diffusion model with a branched GMM head that outputs multiple trajectory hypotheses, improving multimodal coverage and realism.</li>
               <li><b>Human-in-the-Loop Multimodal Benchmark.</b> A photorealistic, closed-loop re-driving framework that collects diverse, human trajectories per scene, which as been validated against real-world logs and complemented by a virtual digital-twin setup.</li>
               <li><b>State-of-the-art Results.</b> Strong open-loop and closed-loop performance, and improved distributional alignment (NLL/JSD), while using compact sampling (one sample per command).</li>
             </ul>
