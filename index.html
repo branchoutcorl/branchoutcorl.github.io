@@ -141,7 +141,7 @@
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified is-tight">
             <p>
-              Modeling the nuanced, multimodal nature of human driving remains a core challenge for autonomous systems, as existing methods often fail to capture the diversity of plausible behaviors in complex real-world scenarios. We introduce an end-to-end planner and a benchmark for modeling realistic multimodality in autonomous driving decisions. Our Gaussian Mixture Model (GMM)-based diffusion planner explicitly captures human-like, multimodal driving decisions in diverse contexts. While the model achieves state-of-the-art performance on current benchmarks, it also reveals weaknesses in standard evaluation practices that rely on single ground-truth trajectories or coarse closed-loop metrics and inadvertently penalize diverse yet plausible alternatives. We further develop a human-in-the-loop simulation benchmark that enables finer-grained evaluation and measures multimodal realism in challenging driving settings.
+              Modeling the nuanced, multimodal nature of human driving remains a core challenge for autonomous systems, as existing methods often fail to capture the diversity of plausible behaviors in complex real-world scenarios. We introduce an end-to-end planner and a benchmark for modeling realistic multimodality in autonomous driving decisions. Our Gaussian Mixture Model (GMM)-based diffusion planner explicitly captures human like, multimodal driving decisions in diverse contexts. While the model achieves state-of-the-art performance on current benchmarks, it also reveals weaknesses in standard evaluation practices that rely on single ground-truth trajectories or coarse closed-loop metrics and inadvertently penalize diverse yet plausible alternatives. We further develop a human-in-the-loop simulation benchmark that enables finer-grained evaluation and measures multimodal realism in challenging driving settings.
             </p>
           </div>
         </div>
@@ -172,7 +172,7 @@
             </p>
             <ul>
               <li><b>GMM-based Diffusion Planner.</b> An end-to-end, scene-conditioned diffusion model with a branched GMM head that outputs multiple trajectory hypotheses per high-level command (Left/Straight/Right), improving multimodal coverage and realism.</li>
-              <li><b>Human-in-the-Loop Multimodal Benchmark.</b> A photorealistic, closed-loop re-driving framework that collects diverse, human trajectories per scene—validated against real-world logs and complemented by a virtual digital-twin setup.</li>
+              <li><b>Human-in-the-Loop Multimodal Benchmark.</b> A photorealistic, closed-loop re-driving framework that collects diverse, human trajectories per scene, which as been validated against real-world logs and complemented by a virtual digital-twin setup.</li>
               <li><b>State-of-the-art Results.</b> Strong open-loop and closed-loop performance, and improved distributional alignment (NLL/JSD), while using compact sampling (one sample per command).</li>
             </ul>
           </div>
@@ -245,7 +245,7 @@
           <h3 class="title is-4" align="left">Closed-Loop (HUGSIM)</h3>
           <div class="content has-text-justified is-tight">
             <p>
-              BranchOut attains the best overall <b>HD-Score = 0.47</b>, with strong safety and progress: NC 0.76, DAC 0.99, TTC 0.69, COM 1.00, Rc 0.58—substantially higher route completion than unimodal baselines.
+              BranchOut attains the best overall <b>HD-Score = 0.47</b>, with strong safety and progress: NC 0.76, DAC 0.99, TTC 0.69, COM 1.00, Rc 0.58, which is substantially higher route completion than unimodal baselines.
             </p>
           </div>
           <img src="./resources/result_closedloop.png" width="80%" alt="Closed-loop results" class="center-img" />
@@ -254,7 +254,19 @@
 
       <div class="columns is-centered has-text-centered top-pad">
         <div class="column is-four-fifths">
-          <h3 class="title is-4" align="left">Qualitative Examples</h3>
+          <h3 class="title is-4" align="left">Open-Loop Qualitative Examples</h3>
+          <div class="content has-text-justified is-tight">
+            <p>
+              Visualizations show BranchOut capturing subtle interactions (vehicle–vehicle, human–vehicle) and selecting among plausible maneuvers (e.g., varying headways or offsets around obstacles) while preserving safety.
+            </p>
+          </div>
+          <img src="./resources/qaulitative_example.png" width="80%" alt="Qualitative examples" class="center-img" />
+        </div>
+      </div>
+
+      <div class="columns is-centered has-text-centered top-pad">
+        <div class="column is-four-fifths">
+          <h3 class="title is-4" align="left">Closed-Loop Qualitative Examples</h3>
           <div class="content has-text-justified is-tight">
             <p>
               Visualizations show BranchOut capturing subtle interactions (vehicle–vehicle, human–vehicle) and selecting among plausible maneuvers (e.g., varying headways or offsets around obstacles) while preserving safety.
